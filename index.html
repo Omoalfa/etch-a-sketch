@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Etch-A-Sketch</title>
+</head>
+<body>
+    <div id="parent-div">
+        <h1>Let's Etch A Sketch!!</h1>
+        <div id="keys">
+            <button id="clear">clear</button>
+            <label for="pen-color">
+                Choose your pen color:
+                <input type="color" id="pen-color" name="pen-color">
+            </label>
+            <label for="box-number">
+                Set pen pixels:
+                <input type="range" name="box-number" id="box-number" min="0" max="100" step="2">
+            </label>
+            <button id="erase">Eraser</button>
+        </div>
+        <div id="draw-board"></div>
+    </div>
+    <div id="mdraw-board">
+        <p>This does not work on a mobile<br>load again with a PC</p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

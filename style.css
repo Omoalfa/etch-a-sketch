@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('./background.jpg');
+    position: relative;
+}
+#parent-div {
+    background: linear-gradient(90deg, rgba(2,0,36,.3) 0%, rgba(9,9,121,.4) 35%, rgba(30,103,159,.5) 66%, rgba(0,212,255,.6) 100%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    align-content: center;
+    
+}
+h1 {
+    text-align: center;
+    font-family: monospace;
+    color: #35e543;
+    border-bottom: 3px dashed #35e543;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 4.5em;
+}
+#keys {
+    text-align: center;
+    color: tomato;
+    margin: 5px auto;
+    font-size: 1.8em;
+}
+#keys > button {
+    background-color: tomato;
+    color: white;
+    border: 1px solid #35e543;
+    padding: 10px 50px;
+    border-radius: 25px;
+}
+#draw-board {
+    background-color: white;
+    border: 5px black solid;
+    width: 490px;
+    height: 490px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+}
+.pixels {
+    border: 1px solid #aaa;
+}
+#mdraw-board {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    #parent-div {
+        display: none;
+    }
+    #mdraw-board {
+        display: block;
+        background-color: white;
+        border: 5px black solid;
+        width: 490px;
+        height: 490px;
+        width: 100%;
+        background: transparent;
+    }
+    #mdraw-board > p {
+        text-align: center;
+        font-size: 3rem;
+        color: tomato
+    }
+} 
